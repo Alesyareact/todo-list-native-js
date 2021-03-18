@@ -1,58 +1,9 @@
 //DRAG and DROP
 let globalDraggableElement;
 
-
-
-// function generationId(){
-//     const id = Date.now().toString(36) + Math.random().toString(36).substr(2);
-//     return id;
-// }
-
-// const dragStart = function (e) {
-//     console.log('dragStart');
-//     setTimeout(() => {
-//         this.classList.add('hide');
-//     }, 0)
-// };
-
-// const dragEnd = function () {
-//     console.log('dragEnd');
-//     this.classList.remove('hide');
-// };
-
-// const dragOver = function (evt) {
-//     console.log('dragOver');
-//     evt.preventDefault();
-// };
-
-// const dragEnter = function (evt) {
-//     console.log('dragEnter');
-//    evt.preventDefault()
-//     this.classList.add('hovered');
-// };
-
-// const dragLeave = function () {
-//     console.log('dragLeave');
-//     this.classList.remove('hovered');
-// };
-
-// const dragDrop = function () {
-//     console.log('dragDrop');
-//     this.append(newDiv);
-//     this.classList.remove('hovered');
-// };
-
-
-
-
-// const cell = document.querySelectorAll('.block');
-
-
 function addTask(idInputField, idColumn){
-
     const valueOfInput = document.getElementById(idInputField).value;
 
-    
     if (valueOfInput !== ""){
         const newDiv = document.createElement('div');
         newDiv.setAttribute('class', 'yourTask');
@@ -68,7 +19,7 @@ function addTask(idInputField, idColumn){
     
 
         document.getElementById(idColumn).appendChild(newDiv);
-        document.getElementById(idInputField).value = ''; //очистили после клика поле ввода
+        document.getElementById(idInputField).value = '';
 
         //DELETE CARD
         const secondBox = document.createElement('div');
@@ -86,41 +37,14 @@ function addTask(idInputField, idColumn){
                 todo.remove();
             }
         })
-
-        //EDIT CARD 
-        // const newDivs = document.querySelectorAll('.yourTask');
-
-        // for (let i = 0; i < newDivs.length; i++) {
-        //     newDivs[i].addEventListener('click', function() {
-        //         const input = document.createElement('input');
-        //         input.value = this.innerHTML;
-        //         this.appendChild(input);
-                
-        //     })
-        // }
     } 
-
-    
-    
-
- 
 }
-
-
-
 
 function clickPress(event, idInputField, idColumn) {
     if (event.keyCode == 13) {
         addTask(idInputField, idColumn)
     }
 }
-
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 
 const dragAndDrop = function(card) {
     const cells = document.querySelectorAll('.js-cell');
@@ -162,4 +86,3 @@ const dragAndDrop = function(card) {
     card.addEventListener('dragstart', dragStart)
     card.addEventListener('dragend', dragEnd)
 }
-
