@@ -1,0 +1,229 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: url(42.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Roboto;
+}
+
+.bkg {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 1000px;
+  min-height: 400px;
+  background: #f6ede7;
+  border-radius: 5px;
+ 
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 42px;
+  margin: 20 0 10 0px;
+
+  color: #a7a2c0;
+}
+
+.column {
+  /* justify-content: space-between; */
+  display: flex;
+  flex-direction: row;
+  /* height: calc(100% - 50px); */
+  margin-bottom: 10px;
+}
+
+input {
+  width: 217px;
+}
+
+.block {
+  flex-grow: 1;
+}
+
+.text {
+  position: center;
+  display: flex;
+  justify-content: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 0 0 8px 0;
+  /* height: 36px; */
+}
+
+.inputFieldOne,
+.inputFieldTwo,
+.inputFieldThree {
+  height: 34px;
+  margin: 0 10px 0 24px;
+  border: 1px solid #90d7d5;
+}
+
+.btn {
+  width: 58px;
+  height: 34px;
+  left: 493px;
+  top: 206px;
+  border-radius: 5px;
+  border: none;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+ 
+
+  cursor: pointer;
+  color: #fdfdfd;
+}
+
+.green:active {
+  background-color: #9bebe8;
+
+}
+
+.yellow:active {
+  background-color: #f3c494;
+}
+
+.blue:active {
+  background-color: #ade4ec;
+}
+
+.green {
+  background-color: #90d7d5;
+}
+
+.yellow {
+  background-color: #fbd3ab;
+}
+
+.blue {
+  background-color: #badadf;
+}
+
+.tgreen {
+  color: #90d7d5;
+}
+
+.tyellow {
+  color: #fbd3ab;
+}
+
+.tblue {
+  color: #badadf;
+}
+
+.yourTask {
+  width: 290px;
+  /* min-height: 40px; */
+  padding: 0 0 0 30px;
+  color: #5f6969;
+  background: #dcefef;
+  border: 1px solid #cfd7d6;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 8px 0 0 25px;
+  position: relative;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* overflow: hidden; */
+ 
+}
+
+.yourTask:hover {
+  background:#a9e9e7;
+  transform: scale(1.05);
+}
+
+.yourTask:focus {
+  outline-width: 0;
+  cursor: all-scroll;
+}
+
+.yourTask:active {
+  
+  cursor: all-scroll;
+}
+
+
+.hide {
+  display: none;
+}
+
+.hovered {
+  background-color: #f3c5a6;
+}
+
+.delete {
+  position: absolute;
+  width: 14px;
+  fill: #9699a5;
+}
+
+.firstBox {
+  /* display: flex; */
+  /* align-items: center; */
+  width: 220px;
+  /* height: 40px; */
+  
+}
+
+.secondBox {
+  display: none;
+}
+
+.yourTask:hover .secondBox {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 40px;
+  margin: 0 20 0 0;
+}
+
+.trash-btn {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  height: 40px;
+  margin: 0 20 0 0;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.fa-trash {
+  pointer-events: none;
+}
+
+p {
+  word-break: break-all;
+}
+
+:active, :hover, :focus {
+  outline: 0;
+  outline-offset: 0;
+}

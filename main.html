@@ -1,0 +1,82 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="bkg">
+      <div class="card">
+        <div class="name">TO DO LIST</div>
+        <div class="column">
+          <div class="block js-cell" id="one">
+            <div class="text tgreen">TO DO</div>
+            <div>
+              <input
+                type="text"
+                onkeypress="clickPress(event, 'inputFieldOne', 'one')"
+                id="inputFieldOne"
+                class="inputFieldOne"
+                value=""
+              />
+              <button
+                class="btn green"
+                onclick="addTask('inputFieldOne', 'one')"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+          <div class="block js-cell" id="two">
+            <div class="text tyellow">DOING</div>
+            <div>
+              <input
+                type="text"
+                onkeypress="clickPress(event, 'inputFieldTwo', 'two')"
+                class="inputFieldTwo"
+                id="inputFieldTwo"
+              />
+              <button
+                class="btn yellow"
+                onclick="addTask('inputFieldTwo', 'two')"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+          <div class="block js-cell" id="three">
+            <div class="text tblue">DONE</div>
+            <div>
+              <input
+                type="text"
+                onkeypress="clickPress(event, 'inputFieldThree', 'three')"
+                class="inputFieldThree"
+                id="inputFieldThree"
+              />
+              <button
+                class="btn blue"
+                onclick="addTask('inputFieldThree', 'three')"
+              >
+                Add
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <input id="inputId"/>
+    <button class="btn" onclick="addItem()">+</button>
+    <div class="layout" id="layoutId">
+      <div class="card">
+        <p>default</p>
+      </div>
+      </div>
+    </div> -->
+    <script src="script.js"></script>
+  </body>
+</html>
